@@ -13,9 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/freaky/config/common_full_phone.mk)
 
-# Inherit from RMX1901 device.
+# Inherit from RMX1971 device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Bootanimation
@@ -24,9 +24,12 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
 
+#Official-fy
+CUSTOM_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := RMX1971
-PRODUCT_NAME := aosp_RMX1971
+PRODUCT_NAME := freaky_RMX1971
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 5 Pro
 PRODUCT_MANUFACTURER := Realme
